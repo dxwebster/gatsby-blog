@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{w2l6:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),o=a.n(t),r=a("okzv"),d=a("Zttt");n.default=function(){return o.a.createElement(d.a,null,o.a.createElement(r.a,{title:"Página não encontrada",description:"Infelizmente a página desejada não pode ser encontrada"}),o.a.createElement("h2",null,"Infelizmente a página desejada não pode ser encontrada!"))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-224327f298c7dbeff4b5.js.map

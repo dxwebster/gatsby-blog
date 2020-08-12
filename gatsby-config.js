@@ -8,7 +8,14 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-catch-links",
-    `gatsby-transformer-remark`,
+    "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    
+    // Plugin para lidar com Arquivos: Posts
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -16,9 +23,17 @@ module.exports = {
         path: `${__dirname}/content/posts`
       }
     },
-    'gatsby-plugin-react-helmet',
-    "gatsby-plugin-offline",
-    "gatsby-plugin-sitemap",
+
+    // Plugin para lidar com Arquivos: Imagens
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
+    
+    // Plugin que cria manifesto PWA
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -30,6 +45,36 @@ module.exports = {
         theme_color: config.themeColor,
         display: "standalone",
         icon: "static/favicon.png",
+      },
+    },
+    
+
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 2048,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
+        ],
       },
     },
     {

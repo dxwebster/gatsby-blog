@@ -5,10 +5,10 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\.cache\\dev-404-page.js"))),
-  "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\src\\pages\\404.js"))),
-  "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\src\\pages\\index.js"))),
-  "component---src-templates-post-jsx": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\src\\templates\\post.jsx"))),
-  "component---src-templates-tag-jsx": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\src\\templates\\tag.jsx")))
+  "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\gatsby-blog\\.cache\\dev-404-page.js"))),
+  "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\gatsby-blog\\src\\pages\\404.js"))),
+  "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\gatsby-blog\\src\\pages\\index.js"))),
+  "component---src-templates-post-jsx": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\gatsby-blog\\src\\templates\\post.jsx"))),
+  "component---src-templates-tag-jsx": hot(preferDefault(require("C:\\Users\\adriana_lima\\Documents\\Dev\\Gatsby\\gatsby-blog\\src\\templates\\tag.jsx")))
 }
 
