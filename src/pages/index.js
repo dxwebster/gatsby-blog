@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Posts from '../components/Posts';
-import SEO from '../components/SEO/SEO';
-import 'minireset.css';
+import Posts from "../components/Posts";
+import SEO from "../components/SEO/SEO";
+import "minireset.css";
 
 export default class Index extends Component {
   render() {
@@ -11,11 +11,11 @@ export default class Index extends Component {
     return (
       <Layout>
         <SEO />
-        <Posts data={data}/>
+        <Posts data={data} />
       </Layout>
-    )
+    );
   }
-};
+}
 
 export const pageQuery = graphql`
   query {
@@ -23,7 +23,7 @@ export const pageQuery = graphql`
       limit: 2000
       sort: { fields: [fields___prefix], order: DESC }
       filter: { frontmatter: { draft: { ne: true } } }
-      ) {
+    ) {
       edges {
         node {
           fields {
@@ -31,6 +31,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            featuredimage
             tags
             date(formatString: "DD/MM/YYYY")
             description
