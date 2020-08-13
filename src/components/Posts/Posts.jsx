@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-import "./Posts.css";
-import Img from "gatsby-image";
 import PreviewCompatibleImage from "./config/PreviewCompatibleImage";
+import { PostContainerList } from "./styles";
 
 export default ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
   const posts = edges.map(({ node }) => (
-    <div key={node.fields.slug} className="post">
-      <Img fluid={node.frontmatter.featuredimage} alt="Gatsby logo" />
-
+    <Link key={node.fields.slug} to={node.fields.slug} className="post-title">
       {node.frontmatter.featuredimage ? (
         <div className="featured-thumbnail">
           <PreviewCompatibleImage
@@ -22,14 +19,15 @@ export default ({ data }) => {
         </div>
       ) : null}
 
-      <Link to={node.fields.slug} className="post-title">
-        <h2>{node.frontmatter.title}</h2>
-      </Link>
-
-      <p className="post-date">{node.frontmatter.date}</p>
-
-      <p>{node.frontmatter.description}</p>
-    </div>
+      <div className="title-box">
+        <strong>
+          <h2>{node.frontmatter.title}</h2>
+          <p>{node.frontmatter.date}</p>
+        </strong>
+        <p>{node.frontmatter.description}</p>
+      </div>
+    </Link>
   ));
-  return <div className="posts">{posts}</div>;
+
+  return <PostContainerList>{posts}</PostContainerList>;
 };

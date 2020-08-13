@@ -28,6 +28,8 @@ Plugins para aplicar Sass: `yarn add gatsby-plugin-sass`
 
 Plugin para eliminar todo css não utilizado: `yarn add gatsby-plugin-purgecss`
 
+Plugin de Styled-Components: `yarn add e gatsby-plugin-styled-components styled-components babel-plugin-styled-components`
+
 ## Tutorial
 
 https://www.joaopedro.cc/blog-com-gatsby-e-react-parte-1

@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
 
     // Plugin para lidar com Arquivos: Imagens
     {
