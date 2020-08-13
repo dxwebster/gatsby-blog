@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import "./Posts.css";
 import Img from "gatsby-image";
-import PreviewCompatibleImage from "../PreviewCompatibleImage/PreviewCompatibleImage";
+import PreviewCompatibleImage from "./config/PreviewCompatibleImage";
 
 export default ({ data }) => {
   const { edges } = data.allMarkdownRemark;

@@ -1,11 +1,13 @@
-import React from 'react';
-import Header from '../Header';
-import Sidebar from '../Sidebar';
-import Container from '../Container';
-import Helmet from 'react-helmet';
-import favicon from '../../../static/favicon.png';
-import config from '../../../data/config';
-import './Layout.css';
+import React from "react";
+import Header from "../Header";
+import Sidebar from "../Sidebar";
+import Container from "../Container";
+import Helmet from "react-helmet";
+import favicon from "../../../static/favicon.png";
+import config from "../../../data/config";
+
+import "minireset.css";
+import "./Layout.css";
 
 export default ({ children }) => (
   <div>
@@ -18,8 +20,14 @@ export default ({ children }) => (
       <Container>
         {children}
         <aside className="aside">
-          <Sidebar title="Sobre mim" description="Sou um desenvolvedor apaixonado por JavaScript e amo desenvolver produtos que melhoram a vida das pessoas."/>
-          <Sidebar title="Sobre o blog" description="Aqui você encontará muito conteúdo de FrontEnd e CSS, além de umas dicas senasacionais de carreira!"/>
+          <Sidebar
+            title="Sobre mim"
+            description="Sou um desenvolvedor apaixonado por JavaScript e amo desenvolver produtos que melhoram a vida das pessoas."
+          />
+          <Sidebar
+            title="Sobre o blog"
+            description="Aqui você encontará muito conteúdo de FrontEnd e CSS, além de umas dicas senasacionais de carreira!"
+          />
         </aside>
       </Container>
     </main>
