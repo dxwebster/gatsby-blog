@@ -59,11 +59,8 @@ module.exports = {
       },
     },
 
-    // Plugins para aplicar CSS-Sass
     "gatsby-plugin-sass",
 
-    // Plugin para eliminar todas as regras css não utilizadas do arquivo all.sass
-    // deve estar depois de outros plug-ins CSS
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
