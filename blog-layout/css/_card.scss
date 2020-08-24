@@ -2,8 +2,9 @@
 CARDS
 ==================*/
 .cards {
-  @include boundaries();
-  display: -ms-grid;
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

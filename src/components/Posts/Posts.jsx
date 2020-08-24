@@ -7,8 +7,10 @@ export default ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
   const posts = edges.map(({ node }) => (
-    <Link key={node.fields.slug} to={node.fields.slug} className="post-title">
+    
+    <Link key={node.fields.slug} to={node.fields.slug} className="post">
       {node.frontmatter.featuredimage ? (
+        
         <div className="featured-thumbnail">
           <PreviewCompatibleImage
             imageInfo={{
@@ -17,6 +19,7 @@ export default ({ data }) => {
             }}
           />
         </div>
+
       ) : null}
 
       <div className="title-box">
@@ -24,6 +27,7 @@ export default ({ data }) => {
           <h2>{node.frontmatter.title}</h2>
           <p>{node.frontmatter.date}</p>
         </strong>
+        
         <p>{node.frontmatter.description}</p>
       </div>
     </Link>
