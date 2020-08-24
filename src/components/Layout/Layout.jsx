@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../Header";
+import Container from "../Container";
+import Hero from "../Hero";
 import Helmet from "react-helmet";
 import favicon from "../../../static/favicon.png";
 import config from "../../../data/config";
@@ -13,12 +15,13 @@ export default ({ children }) => (
       <meta name="description" content={config.siteDescription} />
       <link rel="icon" href={favicon} />
     </Helmet>
-
     <Header />
-    
-    <main role="main">
-        {children}
-    </main>
+  
+    <Hero title="As melhores tecnologias em programação, direto ao ponto e do jeito certo." />
 
+    <Container role="main">
+      {children}
+    </Container>
+   
   </div>
 );

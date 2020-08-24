@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import PreviewCompatibleImage from "./config/PreviewCompatibleImage";
 import { PostContainerList } from "./styles";
 
+
+
 export default ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
@@ -33,5 +35,8 @@ export default ({ data }) => {
     </Link>
   ));
 
-  return <PostContainerList>{posts}</PostContainerList>;
+  return  (
+  <PostContainerList>
+      {posts}
+  </PostContainerList>)
 };
