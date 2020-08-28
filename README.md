@@ -1,5 +1,5 @@
 ## 💡 Sobre o Projeto
-Desenvolvimento de Blog com o  Gatsby, um contrutor de páginas estáticas.<br>
+Desenvolvimento de Blog com o  Gatsby, um construtor de páginas estáticas.<br>
 
 ## 🚀 Tecnologias utilizadas
 
