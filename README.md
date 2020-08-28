@@ -16,7 +16,7 @@ Desenvolvimento de Blog com o  Gatsby, um contrutor de páginas estáticas.<br>
 - Rodar aplicação: `yarn develop`
 
 
-## 📚 Instalação de Plugins e Bibliotecas
+## 📚 Plugins e Bibliotecas Utilizadas
 
 CLI do Gatsby: `yarn global add gatsby-cli`
 
