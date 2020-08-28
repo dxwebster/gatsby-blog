@@ -28,7 +28,8 @@ Remark:
 
 Estilos:
 
-- Styled-Components: `yarn add e gatsby-plugin-styled-components styled-components babel-plugin-styled-components`
+- Styled-Components: `yarn add gatsby-plugin-styled-components styled-components `
+- Babel: `yarn add babel-plugin-styled-components`
 - Aplicar Sass: `yarn add gatsby-plugin-sass`
 - Eliminar todo css não utilizado: `yarn add gatsby-plugin-purgecss`
 
