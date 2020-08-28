@@ -2,33 +2,28 @@
 
 CLI do Gatsby: `yarn global add gatsby-cli`
 
-Plugin para ????: `yarn add gatsby-plugin-catch-links`
+Remark:
 
-Plugin para ????: `yarn add gatsby-plugin-react-helmet`
+Transformar markdown em HTML: `yarn add gatsby-transformer-remark`
+Caminho das imagens: `yarn add gatsby-remark-relative-images`
+Transformar imagens: `yarn add gatsby-remark-images`
+????: `yarn add gatsby-remark-copy-linked-files`
 
-Plugin para ????: `yarn add gatsby-plugin-offline`
+Estilos:
 
-Plugin para ????: `yarn add gatsby-plugin-sitemap`
+Styled-Components: `yarn add e gatsby-plugin-styled-components styled-components babel-plugin-styled-components`
+Aplicar Sass: `yarn add gatsby-plugin-sass`
+Eliminar todo css não utilizado: `yarn add gatsby-plugin-purgecss`
 
-Plugin para ????: `yarn add gatsby-transformer-sharp`
+Outros
 
-Plugin para ????: `yarn add gatsby-plugin-sharp`
-
-Plugin para lidar com Arquivos: `yarn add gatsby-source-filesystem`
-
-Plugin para transformar markdown em HTML: `yarn add gatsby-transformer-remark`
-
-Plugin para lidar com caminho das imagens: `yarn add gatsby-remark-relative-images`
-
-Plugin para transformar imagens: `yarn add gatsby-remark-images`
-
-Plugin para ????: `yarn add gatsby-remark-copy-linked-files`
-
-Plugins para aplicar Sass: `yarn add gatsby-plugin-sass`
-
-Plugin para eliminar todo css não utilizado: `yarn add gatsby-plugin-purgecss`
-
-Plugin de Styled-Components: `yarn add e gatsby-plugin-styled-components styled-components babel-plugin-styled-components`
+Lidar com Arquivos: `yarn add gatsby-source-filesystem`
+????: `yarn add gatsby-plugin-catch-links`
+????: `yarn add gatsby-plugin-react-helmet`
+????: `yarn add gatsby-plugin-offline`
+????: `yarn add gatsby-plugin-sitemap`
+????: `yarn add gatsby-transformer-sharp`
+????: `yarn add gatsby-plugin-sharp`
 
 ## Tutorial
 
