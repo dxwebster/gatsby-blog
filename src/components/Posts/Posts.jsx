@@ -32,6 +32,11 @@ export default ({ data }) => {
         
         <p>{node.frontmatter.description}</p>
       </div>
+
+      <div className="footer-box">
+        <span className="author">Por @dxwebster</span>
+        <span className="date">{node.frontmatter.date}</span>
+      </div>
     </Link>
   ));
 

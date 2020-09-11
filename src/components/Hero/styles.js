@@ -1,23 +1,22 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+import HeroBackground from '../../../static/img/hero.jpg';
 
-    margin: 80px 0;
- 
-  
-  section.hero .container {
-    width: 90%;
-    max-width: 980px;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+export const HeroContainer = styled.div`
+  max-width: 100vw;
+  padding: 5vw 3vw 6vw;
+  margin: 0 auto;
+  background: url(${HeroBackground}) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h1, h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  h2 {
+    margin-top: 20px;
   }
   
-  section.hero p {
-    color: #9a8ebf;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    margin: 10px 0px 0px;
-  }
 `;

@@ -15,6 +15,7 @@ export default ({ children }) => (
       <meta name="description" content={config.siteDescription} />
       <link rel="icon" href={favicon} />
     </Helmet>
+   
     <Header />
   
     <Hero title="As melhores tecnologias em programação, direto ao ponto e do jeito certo." />

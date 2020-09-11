@@ -2,26 +2,23 @@ import styled from "styled-components";
 
 export const PostContainerList = styled.div`
     width: 90%;
-    max-width: 980px;
     margin: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: minmax(250px, 1fr) [auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
 
   a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #cbbcff;
+    justify-content: space-between;
+
+    background-color: #fff;
     cursor: pointer;
-    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #929293;
+    min-height: 420px;
 
     &:hover {
       -webkit-transform: translateY(-7px);
@@ -47,6 +44,7 @@ export const PostContainerList = styled.div`
 
     .title-box {
       margin: 20px;
+      justify-content: space-between;
 
       strong {
         font-size: 20px;
@@ -57,9 +55,6 @@ export const PostContainerList = styled.div`
           font-size: 22px;
           font-weight: bold;
 
-          p {
-            margin-bottom: 5px;
-          }
         }
       }
 
@@ -72,7 +67,15 @@ export const PostContainerList = styled.div`
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        margin: 20px 0 0;
       }
+    }
+
+    .footer-box{
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
+      justify-content: space-between;
     }
   }
 `;
