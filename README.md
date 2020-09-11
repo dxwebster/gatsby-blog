@@ -11,7 +11,7 @@ Desenvolvimento de Blog com o  Gatsby, um construtor de páginas estáticas.<br>
 ## 📥 Executar esse projeto no seu computador
 
 - Clonar Repositório: `git clone https://github.com/dxwebster/Gatsby-Blog`
-- Ir para a pasta: `cd BGatsby-Blog`
+- Ir para a pasta: `cd Gatsby-Blog`
 - Instalar dependências: `yarn install`
 - Rodar aplicação: `yarn develop`
 
