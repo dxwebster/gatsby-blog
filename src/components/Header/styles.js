@@ -41,18 +41,8 @@ export const HeaderContainer = styled.div`
       .social{
         width: 30%;
         display: flex;
-        justify-content: space-between;
-
-        a {
-          text-decoration: none;
-
-          .header-title {
-            font-weight: bold;
-            color: #fff;
-            font-size: 14px;
-            text-transform: uppercase;
-          }
-        }
+        gap: 20px;
+        flex-direction: row-reverse
       }
       
     }

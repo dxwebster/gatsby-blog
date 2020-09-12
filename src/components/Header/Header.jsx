@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 
 import { HeaderContainer } from "./styles";
 
+import { SocialIcon } from 'react-social-icons';
+
+
 
 function Header(props) {
   return (
@@ -15,9 +18,9 @@ function Header(props) {
           </div>
           
           <div className="social">
-            <Link to="/"><h1 className="header-title">Github</h1></Link>
-            <Link to="/"><h1 className="header-title">Linkedin</h1></Link>
-            <Link to="/"><h1 className="header-title">Instagram</h1></Link>
+            <SocialIcon url="https://linkedin.com/adrianalimashika" style={{ height: 25, width: 25 }} bgColor="#ff5a01"/>
+            <SocialIcon url="https://instagram.com/driixie" style={{ height: 25, width: 25 }} bgColor="#ff5a01" />
+            <SocialIcon url="https://github.com/dxwebster" style={{ height: 25, width: 25 }} bgColor="#ff5a01"/>
           </div>
         </div>
 

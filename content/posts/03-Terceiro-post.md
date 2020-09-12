@@ -3,14 +3,14 @@ title: "Terceiro Post"
 date: "2019-02-28"
 description: "Pellentesque ultricies lectus ut lectus eleifend fringilla. Nunc laoreet placerat pretium. Phasellus nec ultricies sem. Nunc pharetra ullamcorper elementum. Sed eget sem et nibh volutpat pharetra vel ac enim"
 draft: false
-featuredimage: /img/blog-index.jpg
+featuredimage: /img/colors.jpg
 author: "@dxwebster"
 tags:
   - Blog 
   - Terceiro post
 ---
 
-![flavor wheel](/img/blog-index.jpg)
+![flavor wheel](/img/colors.jpg)
 
 Aqui vai todo o conteúdo do seu blog, e você pode editar e escrever da maneira que mais gostar. Agora, como todo site deve ter, bora colocar um lorem ipsum:
 
