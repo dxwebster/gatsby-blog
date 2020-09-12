@@ -11,8 +11,6 @@ export const PostContainerList = styled.div`
   a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
     background-color: #fff;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -25,7 +23,13 @@ export const PostContainerList = styled.div`
       transform: translateY(-7px);
     }
 
-    .featured-thumbnail {
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  .featured-thumbnail {
       width: 100%;
       padding-top: 56.25%;
       /* 16:9 */
@@ -59,14 +63,6 @@ export const PostContainerList = styled.div`
       }
 
       p {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-item-align: end;
-        align-self: end;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         margin: 20px 0 0;
       }
     }
@@ -77,5 +73,8 @@ export const PostContainerList = styled.div`
       margin: 20px;
       justify-content: space-between;
     }
+  
+}
+
   }
 `;

@@ -47,8 +47,8 @@ exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
   
     return new Promise((resolve, reject) => {
-      const postTemplate = path.resolve("src/templates/post.jsx");
-      const tagTemplate = path.resolve("src/templates/tag.jsx");
+      const postTemplate = path.resolve("src/templates/Post/post.jsx");
+      const tagTemplate = path.resolve("src/templates/Tag/tag.jsx");
       resolve(
         graphql(
           `
@@ -101,7 +101,7 @@ exports.createPages = ({ graphql, actions }) => {
           const tagList = Array.from(tagSet);
           tagList.forEach(tag => {
             createPage({
-              path: `/tag/${_.kebabCase(tag)}/`,
+              path: `tag/${_.kebabCase(tag)}/`,
               component: tagTemplate,
               context: {
                 tag

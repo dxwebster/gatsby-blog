@@ -19,8 +19,8 @@ export default ({ title, description, url, article }) => {
         {article ? (
           <meta property="og:type" content="article" />
         ) : (
-          <meta property="og:type" content="website" />
-        )}
+            <meta property="og:type" content="website" />
+          )}
         {seo.title && <meta property="og:title" content={seo.title} />}
         {seo.description && (
           <meta property="og:description" content={seo.description} />
