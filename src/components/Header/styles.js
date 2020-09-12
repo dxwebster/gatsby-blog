@@ -1,5 +1,6 @@
+import styled from "styled-components";
 
-.header {
+export const HeaderContainer = styled.div`
     padding: 1.0rem 1.5rem 1.0rem 1.5rem;
     display: flex;
     justify-content: flex-start;
@@ -7,7 +8,7 @@
     flex-direction: row;
     background-color: #21092d;
 
-    .header-container{
+    .nav-container{
       max-width: 1000px;
       width: 100%;
       margin: 0 auto;
@@ -53,7 +54,8 @@
       }
       
     }
-  }
+`
 
 
- 
+
+/*# sourceMappingURL=Header.css.map */

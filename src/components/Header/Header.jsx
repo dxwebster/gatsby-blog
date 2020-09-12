@@ -1,25 +1,17 @@
 import React from 'react';
-import { StaticQuery, graphql, Link } from "gatsby"
-import './Header.css';
+import { Link } from "gatsby"
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query HeaderQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <header className="header">
-        <div className="header-container">
+import { HeaderContainer } from "./styles";
+
+
+function Header(props) {
+  return (
+    <HeaderContainer>
+        <div className="nav-container">
           <div className="nav">
             <Link to="/"><h1 className="header-title">Home</h1></Link>
-            <Link to="/"><h1 className="header-title">Sobre mim</h1></Link>
-            <Link to="/"><h1 className="header-title">Contato</h1></Link>
+            <Link to="/about"><h1 className="header-title">Sobre mim</h1></Link>
+            <Link to="/contact"><h1 className="header-title">Contato</h1></Link>
           </div>
           
           <div className="social">
@@ -28,8 +20,10 @@ export default () => (
             <Link to="/"><h1 className="header-title">Instagram</h1></Link>
           </div>
         </div>
-      </header>
-    )}
-  />
 
-)
+    </HeaderContainer>
+  );
+}
+
+export default Header;
+
