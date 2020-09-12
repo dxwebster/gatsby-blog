@@ -1,61 +1,15 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-    padding: 1.0rem 1.5rem 1.0rem 1.5rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+    grid-area: footer;
+    padding: 50px 0;
     background-color: #21092d;
+    margin-top: 50px;
 
-    .nav-container{
-      max-width: 1000px;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-
-      .nav {
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-
-      
-        a {
-          text-decoration: none;
-
-          
-          .header-title {
-            font-weight: bold;
-            color: #fff;
-            font-size: 14px;
-            text-transform: uppercase;
-          }
-        }
-
-      }
-
- 
-      .social{
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-
-        a {
-          text-decoration: none;
-
-          .header-title {
-            font-weight: bold;
-            color: #fff;
-            font-size: 14px;
-            text-transform: uppercase;
-          }
-        }
-      }
-      
+    h1{
+      color: #fff;
+      text-align: center;
     }
+    
 `
 
-
-
-/*# sourceMappingURL=Header.css.map */

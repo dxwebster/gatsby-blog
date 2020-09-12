@@ -25,6 +25,8 @@ export const PostContainerList = styled.div`
 
 .content{
     height: 100%;
+    line-height: 1.5;
+    margin: 22px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

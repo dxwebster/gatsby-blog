@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+    grid-area: header;
+    
     padding: 1.0rem 1.5rem 1.0rem 1.5rem;
     display: flex;
     justify-content: flex-start;

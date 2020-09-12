@@ -10,10 +10,12 @@ import favicon from "../../../static/favicon.png";
 import config from "../../../data/config";
 
 import "minireset.css";
-import "./Layout.css";
+import {LayoutContainer} from "./styles.js";
 
 export default ({ children }) => (
-  <div>
+  <>
+  <LayoutContainer>
+
     <Helmet>
       <meta name="description" content={config.siteDescription} />
       <link rel="icon" href={favicon} />
@@ -29,5 +31,7 @@ export default ({ children }) => (
 
     <Footer />
    
-  </div>
+  </LayoutContainer>
+  </>
 );
+
