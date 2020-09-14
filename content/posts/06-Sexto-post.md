@@ -4,7 +4,7 @@ date: "2019-02-28"
 description: "Pellentesque ultricies lectus ut lectus eleifend fringilla. Nunc laoreet placerat pretium. Phasellus nec ultricies sem. Nunc pharetra ullamcorper elementum. Sed eget sem et nibh volutpat pharetra vel ac enim"
 draft: false
 featuredimage: /img/blog-index.jpg
-author: "@dxwebster"
+author: dxwebster
 tags:
   - Blog 
   - Terceiro post

@@ -1,13 +1,13 @@
 const config = {
     siteTitle: 'dxwebster',
-    siteDescription: 'O melhor blog de programação do Brasil tem nome, é CodeStack.',
+    siteDescription: '',
     siteTitleShort: 'dxwebster',
     siteRss: "/rss.xml",
-    siteImage: "https://codestackbrasil.netlify.com/banner-do-site.png",
+    siteImage: "",
     googleAnalyticsID: "**-********-*",
     themeColor: "#000000",
     backgroundColor: "#F2F3F4",
-    siteUrl: "https://codestackbrasil.netlify.com",
+    siteUrl: "",
   };
   
   module.exports = config;

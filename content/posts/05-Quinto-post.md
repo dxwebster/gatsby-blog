@@ -4,6 +4,7 @@ date: "2019-02-28"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt hendrerit purus at elementum. Quisque sit amet malesuada felis. Proin ac fermentum lacus. Duis libero magna, iaculis ac semper id, volutpat ac mauris."
 draft: false
 featuredimage: /img/green.jpg
+author: dxwebster
 tags:
   - Blog
   - Primeiro post
